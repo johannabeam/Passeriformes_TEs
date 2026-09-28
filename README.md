@@ -9,3 +9,11 @@ Only the first five columns are of importance. The column header, from left to r
 
 ## [species].filtered.ultra files
 "The files labeled [species].filtered.srf.bed and [species].filtered.ultra are additional satellites and tandem repeats found in those programs that are not found in the repeatmasker output, so those can be included for total repetitive content in addition to those annotated in the repeatmasker files."
+
+
+# UCE Phylogeny of the species
+
+Make the genomes.conf file for phyluce:
+```
+awk '{print $1 ":/path/to/TEs/lastz_genomes/" $1 "/" $1 ".2bit"}' ~/genomes.txt > genomes.conf
+```
