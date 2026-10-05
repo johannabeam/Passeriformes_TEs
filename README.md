@@ -10,6 +10,15 @@ Only the first five columns are of importance. The column header, from left to r
 ## [species].filtered.ultra files
 "The files labeled [species].filtered.srf.bed and [species].filtered.ultra are additional satellites and tandem repeats found in those programs that are not found in the repeatmasker output, so those can be included for total repetitive content in addition to those annotated in the repeatmasker files."
 
+## [species].out file
+For some reason, there are a few instances where repeats are not categorized as they should be. E.g., (CA)n usually is in the repeat_match column, but also show up in the class.family column. These should probably be filtered out?
+
+https://www.girinst.org/repbase/update/browse.php?letter=E&rank=&autonomous=1&nonautonomous=1&simple=1&format=EMBL#browse
+
+CAM2_GG - gallus gallus
+CENSTRIG - centromere repeat (tandem) - strigidae
+AVIXHoI - W chromosome repeat region - strigidae
+
 
 # UCE Phylogeny of the species
 
